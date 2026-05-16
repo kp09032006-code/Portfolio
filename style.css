@@ -410,7 +410,7 @@ img {
 }
 
 .float-card {
-display: flex; flex-direction: column; align-items: center;
+ 
    
   position: absolute;
   z-index: 3;
@@ -448,7 +448,7 @@ display: flex; flex-direction: column; align-items: center;
 
 .hero-info-panel {
  width: 100%; max-width: 520px;
-   
+   align-items: center;
   position: relative;
   z-index: 3;
   left: 35px;
