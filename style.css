@@ -410,6 +410,8 @@ img {
 }
 
 .float-card {
+display: flex; flex-direction: column; align-items: center;
+   
   position: absolute;
   z-index: 3;
   top: 52px;
