@@ -445,10 +445,12 @@ img {
 }
 
 .hero-info-panel {
-  position: absolute;
-  z-index: 13;
+ width: 100%; max-width: 520px;
+   
+  position: relative;
+  z-index: 3;
   left: 35px;
-   top: 360px;
+    margin-top: 16px;
   
   width: calc(100% - 70px);
   padding: 24px;
