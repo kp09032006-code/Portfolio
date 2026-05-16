@@ -446,7 +446,7 @@ img {
 
 .hero-info-panel {
   position: absolute;
-  z-index: 3;
+  z-index: 13;
   left: 35px;
    top: 360px;
   
