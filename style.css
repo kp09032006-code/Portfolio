@@ -448,6 +448,7 @@ img {
   position: absolute;
   z-index: 3;
   left: 35px;
+   top: 60px;
   bottom: 35px;
   width: calc(100% - 70px);
   padding: 24px;
