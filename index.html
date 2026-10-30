@@ -1,366 +1,1650 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krisha Patel | IT Student & Data Analytics Learner</title>
-  <meta name="description" content="Professional portfolio website of Krisha Patel, an Information Technology student focused on data analytics, SQL, Excel, Power BI, Python, and practical IT projects." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>Krisha Patel | Data Analyst &amp; B.Tech IT Engineer</title>
+  
+  <meta name="description" content="Portfolio of Krisha Patel — 6th-semester B.Tech Information Technology student at MBIT (CGPA 8.11). Specializing in Data Analytics, SQL, Power BI, Python, and Predictive Machine Learning." />
+  <meta name="author" content="Krisha Patel" />
+  <meta name="theme-color" content="#070b14" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Krisha Patel | Data Analyst &amp; B.Tech IT Engineer" />
+  <meta property="og:description" content="Transforming raw data into actionable business intelligence, predictive ML pipelines, and executive dashboards." />
+  <meta property="og:url" content="https://portfolio-murex-nine-hkgno2q8sl.vercel.app/" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-glow glow-one"></div>
-  <div class="page-glow glow-two"></div>
+  <!-- Accessible Skip Link -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
 
-  <nav class="navbar" id="navbar">
-    <div class="nav-wrapper">
-      <a href="#home" class="brand">KP<span>.</span></a>
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Monogram Brand -->
+      <a href="#hero" class="brand-link" aria-label="Krisha Patel Portfolio Home">
+        <div class="brand-avatar">KP</div>
+        <div class="brand-meta">
+          <span class="brand-name">Krisha Patel</span>
+          <span class="brand-role">data_analytics.dev</span>
+        </div>
+      </a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+        <a href="#about" class="nav-item-link">About</a>
+        <a href="#skills" class="nav-item-link">Skills</a>
+        <a href="#playground" class="nav-item-link">Query Studio</a>
+        <a href="#projects" class="nav-item-link">Projects</a>
+        <a href="#experience" class="nav-item-link">Experience</a>
+        <a href="#education" class="nav-item-link">Education</a>
+        <a href="#certifications" class="nav-item-link">Certificates</a>
+        <a href="#github" class="nav-item-link">GitHub</a>
+        <a href="#contact" class="nav-item-link">Contact</a>
+      </nav>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">Profile</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Project</a>
-        <a href="#contact">Contact</a>
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Theme">
+          <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <a href="Krisha_Patel_Resume.pdf" class="btn btn-sm btn-secondary btn-resume-header" target="_blank" rel="noopener noreferrer" download="Krisha_Patel_Resume.pdf">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <a href="#contact" class="btn btn-sm btn-primary">
+          <span>Get in Touch</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
       </div>
     </div>
-  </nav>
+  </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-grid">
-        <div class="hero-content reveal">
-          <p class="eyebrow">B.Tech Information Technology Student</p>
-          <h1>Krisha Patel</h1>
-          <h2><span id="typingText"></span><span class="typing-cursor"></span></h2>
-          <p class="hero-text">
-            6th-semester B.Tech Information Technology student focused on Data Analytics. I enjoy using SQL, Excel, Power BI, and Python basics to analyze data, solve problems, and build practical IT solutions.
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <!-- Hero Content Column -->
+        <div class="hero-content-col">
+          <div class="hero-badge-row reveal">
+            <span class="status-indicator-badge">
+              <span class="pulse-dot"></span>
+              Open to Data Analytics &amp; IT Roles
+            </span>
+            <span class="location-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Anand / Gujarat, India
+            </span>
+          </div>
+
+          <h1 class="hero-name reveal delay-1" id="hero-title">
+            Krisha <span class="text-gradient">Patel</span>
+          </h1>
+
+          <h2 class="hero-role-title reveal delay-2">
+            <span id="typingText"></span><span style="color: var(--accent-emerald-light); animation: pulseEmerald 1s infinite;">|</span>
+          </h2>
+
+          <p class="hero-description reveal delay-3">
+            6th-semester B.Tech Information Technology student at MBIT with a strong focus on Data Analytics. I specialize in extracting strategic business insights using SQL, Excel, and Power BI, while engineering predictive ML pipelines and secure software solutions with Python.
           </p>
 
-          <div class="hero-actions">
-            <a href="#project" class="btn btn-primary">View Project</a>
-            <a href="Krisha_Patel_Resume.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
+          <div class="hero-cta-group reveal delay-4">
+            <a href="#projects" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+              <span>Explore Projects</span>
+            </a>
+
+            <a href="Krisha_Patel_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" download="Krisha_Patel_Resume.pdf">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="https://github.com/kp09032006-code" class="btn btn-outline" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub Profile">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
           </div>
 
-          <div class="hero-meta">
+          <!-- Hero Metrics Bar -->
+          <div class="hero-metrics-bar reveal delay-4">
+            <div class="hero-metric-item">
+              <span class="hero-metric-number">150<span>K+</span></span>
+              <span class="hero-metric-label">Zomato Records Analyzed</span>
+            </div>
+            <div class="hero-metric-item">
+              <span class="hero-metric-number">8.11</span>
+              <span class="hero-metric-label">B.Tech IT CGPA (MBIT)</span>
+            </div>
+            <div class="hero-metric-item">
+              <span class="hero-metric-number">5<span>+</span></span>
+              <span class="hero-metric-label">Verified Certifications</span>
+            </div>
+            <div class="hero-metric-item">
+              <span class="hero-metric-number">0.79<span> R²</span></span>
+              <span class="hero-metric-label">ML Regression Accuracy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Interactive Analytics Studio Console (No Portrait) -->
+        <div class="hero-visual-col reveal delay-2">
+          <div class="analytics-hero-card console-mode">
+            <!-- Console Window Header -->
+            <div class="hero-console-header">
+              <div class="console-dots">
+                <span class="c-dot c-dot-red"></span>
+                <span class="c-dot c-dot-yellow"></span>
+                <span class="c-dot c-dot-green"></span>
+              </div>
+              <span class="console-tab-name">krisha_analytics.py</span>
+              <span class="console-lang-tag">Python 3.13 • ML</span>
+            </div>
+
+            <!-- Abstract Analytics Core Visual -->
+            <div class="hero-graphic-core">
+              <div class="analytics-orbit-container">
+                <div class="orbit-ring ring-1"></div>
+                <div class="orbit-ring ring-2"></div>
+                <div class="orbit-ring ring-3"></div>
+                <div class="core-monogram-box">
+                  <span class="core-symbol">&lt;KP/&gt;</span>
+                </div>
+              </div>
+              <div class="graphic-identity-text">
+                <h3 class="identity-name">Krisha Patel</h3>
+                <p class="identity-sub">Data Analyst &amp; B.Tech IT '27 • MBIT Anand</p>
+              </div>
+            </div>
+
+            <!-- Mini Metrics Row -->
+            <div class="hero-console-metrics">
+              <div class="console-metric-item">
+                <span class="c-metric-num">150K+</span>
+                <span class="c-metric-lbl">Orders Analyzed</span>
+              </div>
+              <div class="console-metric-item">
+                <span class="c-metric-num">8.11</span>
+                <span class="c-metric-lbl">B.Tech CGPA</span>
+              </div>
+              <div class="console-metric-item">
+                <span class="c-metric-num">0.7865</span>
+                <span class="c-metric-lbl">ML R² Score</span>
+              </div>
+              <div class="console-metric-item">
+                <span class="c-metric-num">KERYAR</span>
+                <span class="c-metric-lbl">Data Intern</span>
+              </div>
+            </div>
+
+            <!-- Code Preview Snippet -->
+            <div class="hero-console-code" aria-label="Analyst profile configuration snippet">
+              <div class="code-line"><span class="sql-kw">class</span> <span class="sql-fn">DataAnalyst</span>:</div>
+              <div class="code-line indent-1">name = <span class="sql-str">"Krisha Patel"</span></div>
+              <div class="code-line indent-1">focus = [<span class="sql-str">"SQL BI"</span>, <span class="sql-str">"Predictive ML"</span>, <span class="sql-str">"ETL"</span>]</div>
+              <div class="code-line indent-1">champion_r2 = <span class="sql-num">0.7865</span> <span class="code-comment"># HistGradientBoosting</span></div>
+              <div class="code-line indent-1"><span class="sql-kw">def</span> <span class="sql-fn">objective</span>(self):</div>
+              <div class="code-line indent-2"><span class="sql-kw">return</span> <span class="sql-str">"Transform raw data into business impact"</span></div>
+            </div>
+
+            <!-- Card Bottom Telemetry Bar -->
+            <div class="hero-card-telemetry">
+              <div class="telemetry-tag">
+                <span style="color: var(--accent-emerald-light);">●</span>
+                <span>Active Analytics Engine</span>
+              </div>
+              <span class="telemetry-val">Ready for Opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. ABOUT ME SECTION ==================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-kicker">01 // Profile &amp; Focus</span>
+          <h2 class="section-title" id="about-title">
+            Architecting Insights from <span class="text-gradient">Complex Data</span>
+          </h2>
+          <p class="section-lead">
+            Bridging raw relational datasets, statistical intelligence, and business decision-making.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <!-- Main About Card -->
+          <div class="about-main-card reveal delay-1">
+            <p class="about-intro-text">
+              I am a <strong>6th-semester B.Tech Information Technology student</strong> at Madhuben &amp; Bhanubhai Patel Institute of Technology (MBIT), CVM University, Gujarat (2023–2027), currently holding an <strong>8.11 CGPA</strong>. My passion lies at the intersection of business intelligence, database architecture, and machine learning.
+            </p>
+            <p class="about-sub-text">
+              Over the course of my academic journey and corporate internship at <strong>Keryar IT Solution</strong>, I have cultivated a structured approach to solving problems: understanding the business context, cleansing and validating data pipelines, deriving actionable metrics through SQL and Python, and presenting dynamic visualizations that empower stakeholders to make decisive moves.
+            </p>
+
+            <!-- 4 Core Pillars Grid -->
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Business Intelligence</h3>
+                <p class="pillar-desc">Designing DAX-powered Power BI dashboards and advanced Excel models to track core operational KPIs.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Machine Learning</h3>
+                <p class="pillar-desc">Building multi-model regression pipelines with Scikit-Learn (HistGradientBoosting, Random Forest) with high predictive scores.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Relational SQL &amp; ETL</h3>
+                <p class="pillar-desc">Writing high-performance queries, multi-table joins, subqueries, and data normalization routines for data integrity.</p>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <h3 class="pillar-title">Security &amp; Engineering</h3>
+                <p class="pillar-desc">Applying information security fundamentals, double-layer steganography, and robust software logic.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Details Column -->
+          <div class="about-side-stack reveal delay-2">
+            <div class="details-card">
+              <h3 class="details-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald-light)" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                Quick Facts
+              </h3>
+
+              <div class="detail-row">
+                <span class="detail-label">Degree</span>
+                <span class="detail-value">B.Tech in Information Technology</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Institution</span>
+                <span class="detail-value">MBIT, CVM University</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Academic CGPA</span>
+                <span class="detail-value" style="color: var(--accent-emerald-light); font-weight: 700;">8.11 / 10.0</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Graduation Batch</span>
+                <span class="detail-value">2023 – 2027</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Location</span>
+                <span class="detail-value">Gujarat, India</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Languages</span>
+                <span class="detail-value">English, Gujarati, Hindi</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Target Roles</span>
+                <span class="detail-value" style="color: var(--accent-cyan);">Data Analyst • BI Engineer • IT Intern</span>
+              </div>
+            </div>
+
+            <!-- Focus Quote Banner -->
+            <div class="focus-quote-banner">
+              <span class="quote-icon">“</span>
+              <p class="quote-text">
+                Data without structure is noise; data with rigorous analytics and storytelling becomes an indispensable competitive advantage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. TECHNICAL SKILLS SECTION ==================== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header text-center reveal">
+          <span class="section-kicker">02 // Technical Competence</span>
+          <h2 class="section-title" id="skills-title">
+            Core Toolkit &amp; <span class="text-gradient">Technologies</span>
+          </h2>
+          <p class="section-lead">
+            Hands-on technical capabilities validated through academic rigor, industry certifications, and corporate internship delivery.
+          </p>
+        </header>
+
+        <!-- Skill Filter Tabs -->
+        <div class="skills-tab-nav reveal delay-1">
+          <button class="skill-tab-btn active" data-filter="all">All Skills</button>
+          <button class="skill-tab-btn" data-filter="analytics">Data Analytics &amp; BI</button>
+          <button class="skill-tab-btn" data-filter="programming">Programming &amp; ML</button>
+          <button class="skill-tab-btn" data-filter="database">Databases &amp; Systems</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-cards-grid reveal delay-2">
+          <!-- Skill 1: SQL -->
+          <div class="skill-card" data-category="analytics database">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">SQL</div>
+              <span class="skill-level-pill">Advanced</span>
+            </div>
+            <h3 class="skill-name">Structured Query Language (SQL)</h3>
+            <p class="skill-summary">
+              Multi-table joins, subqueries, grouping, aggregate metrics, data filtering, and relational schema optimization.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">MySQL</span>
+              <span class="tool-tag">PostgreSQL</span>
+              <span class="tool-tag">Aggregations</span>
+              <span class="tool-tag">Subqueries</span>
+            </div>
+          </div>
+
+          <!-- Skill 2: Microsoft Excel -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">XLS</div>
+              <span class="skill-level-pill">Advanced</span>
+            </div>
+            <h3 class="skill-name">Microsoft Excel Analytics</h3>
+            <p class="skill-summary">
+              Dynamic Pivot Tables, nested VLOOKUP/XLOOKUP, summary modeling, conditional formatting, and KPI dashboard reporting.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>86%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 86%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">Pivot Tables</span>
+              <span class="tool-tag">XLOOKUP</span>
+              <span class="tool-tag">Data Cleansing</span>
+              <span class="tool-tag">Coursera Verified</span>
+            </div>
+          </div>
+
+          <!-- Skill 3: Power BI -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">PBI</div>
+              <span class="skill-level-pill">Proficient</span>
+            </div>
+            <h3 class="skill-name">Power BI &amp; Dashboard Design</h3>
+            <p class="skill-summary">
+              Data modeling, relational star schemas, DAX calculated measures, interactive slicers, and executive-level visual storytelling.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">DAX Measures</span>
+              <span class="tool-tag">Data Modeling</span>
+              <span class="tool-tag">Interactive KPIs</span>
+              <span class="tool-tag">Keryar CRM</span>
+            </div>
+          </div>
+
+          <!-- Skill 4: Python -->
+          <div class="skill-card" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">PY</div>
+              <span class="skill-level-pill">Proficient</span>
+            </div>
+            <h3 class="skill-name">Python for Data Science</h3>
+            <p class="skill-summary">
+              Data manipulation with Pandas and NumPy, data pipeline automation, algorithmic scripting, and statistical calculation.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">Pandas</span>
+              <span class="tool-tag">NumPy</span>
+              <span class="tool-tag">Flask 3.1</span>
+              <span class="tool-tag">Automation</span>
+            </div>
+          </div>
+
+          <!-- Skill 5: Machine Learning & Scikit-Learn -->
+          <div class="skill-card" data-category="programming">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">ML</div>
+              <span class="skill-level-pill">Intermediate</span>
+            </div>
+            <h3 class="skill-name">Predictive Machine Learning</h3>
+            <p class="skill-summary">
+              Regression pipelines, feature engineering, permutation importance, multi-model evaluation (HistGradientBoosting, Random Forest).
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>78%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">Scikit-Learn</span>
+              <span class="tool-tag">Regression</span>
+              <span class="tool-tag">Feature Importance</span>
+              <span class="tool-tag">R² = 0.7865</span>
+            </div>
+          </div>
+
+          <!-- Skill 6: Data Visualization -->
+          <div class="skill-card" data-category="analytics">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">VIZ</div>
+              <span class="skill-level-pill">Proficient</span>
+            </div>
+            <h3 class="skill-name">Data Visualization &amp; Storytelling</h3>
+            <p class="skill-summary">
+              Transforming complex metrics into clear charts with Matplotlib, Seaborn, and Chart.js for intuitive business consumption.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>84%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">Chart.js</span>
+              <span class="tool-tag">Matplotlib</span>
+              <span class="tool-tag">Seaborn</span>
+              <span class="tool-tag">Simplilearn</span>
+            </div>
+          </div>
+
+          <!-- Skill 7: Security & Cryptography -->
+          <div class="skill-card" data-category="programming database">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">SEC</div>
+              <span class="skill-level-pill">Academic</span>
+            </div>
+            <h3 class="skill-name">Data Security &amp; Steganography</h3>
+            <p class="skill-summary">
+              Information hiding algorithms, dual-layer media encryption, data integrity verification, and privacy preservation.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">Steganography</span>
+              <span class="tool-tag">Encryption</span>
+              <span class="tool-tag">Data Integrity</span>
+              <span class="tool-tag">Pixel Logic</span>
+            </div>
+          </div>
+
+          <!-- Skill 8: Git & Development Workflow -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon">GIT</div>
+              <span class="skill-level-pill">Proficient</span>
+            </div>
+            <h3 class="skill-name">Version Control &amp; IT Workflow</h3>
+            <p class="skill-summary">
+              Git branching, repository management, GitHub collaboration, command line utilities, and software documentation.
+            </p>
+            <div class="skill-bar-wrap">
+              <div class="skill-bar-header">
+                <span>Proficiency Benchmark</span>
+                <span>82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+            <div class="skill-tool-tags">
+              <span class="tool-tag">Git</span>
+              <span class="tool-tag">GitHub</span>
+              <span class="tool-tag">Markdown</span>
+              <span class="tool-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. INTERACTIVE QUERY STUDIO ==================== -->
+    <section class="section" id="playground" aria-labelledby="playground-title">
+      <div class="container">
+        <header class="section-header text-center reveal">
+          <span class="section-kicker">03 // Interactive Studio</span>
+          <h2 class="section-title" id="playground-title">
+            Live Analytical <span class="text-gradient">Query Playground</span>
+          </h2>
+          <p class="section-lead">
+            Test how I extract insights! Select an analytical scenario below to simulate query execution against sample project data.
+          </p>
+        </header>
+
+        <div class="analytics-playground-wrap reveal delay-1">
+          <!-- Playground Header -->
+          <div class="playground-header">
+            <div class="playground-title-area">
+              <div class="console-dots">
+                <span class="c-dot c-dot-red"></span>
+                <span class="c-dot c-dot-yellow"></span>
+                <span class="c-dot c-dot-green"></span>
+              </div>
+              <span class="playground-title">krisha_query_terminal.sql</span>
+            </div>
+
+            <!-- Presets Navigation -->
+            <div class="query-presets">
+              <button class="preset-btn active" data-preset="zomato">Zomato Big Data</button>
+              <button class="preset-btn" data-preset="keryar">CRM Lead Funnel</button>
+              <button class="preset-btn" data-preset="agrovision">Agrovision Sensors</button>
+            </div>
+          </div>
+
+          <!-- Playground Body -->
+          <div class="playground-body">
+            <!-- Left: Query Code -->
+            <div class="query-editor-panel">
+              <span class="editor-label">Relational Query Expression</span>
+              <div class="code-box" id="playgroundSqlBox">
+                <!-- Dynamically populated by script.js -->
+              </div>
+              <div class="query-run-row">
+                <span class="query-timing" id="queryTiming">⚡ Executed in 9.4 ms • 150,000 index scans</span>
+                <button class="btn btn-sm btn-primary" id="runQueryBtn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  Run Query
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Results Table -->
+            <div class="query-results-panel">
+              <span class="editor-label">Query Results Set</span>
+              <div class="results-table-wrap">
+                <table class="results-table">
+                  <thead id="playgroundResultsHead">
+                    <!-- Populated dynamically -->
+                  </thead>
+                  <tbody id="playgroundResultsBody">
+                    <!-- Populated dynamically -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. FEATURED PROJECTS SECTION ==================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-kicker">04 // Project Portfolio</span>
+          <h2 class="section-title" id="projects-title">
+            Featured <span class="text-gradient">Projects &amp; Solutions</span>
+          </h2>
+          <p class="section-lead">
+            From big data sales prediction engines to agricultural AI telemetry and cryptographic security.
+          </p>
+        </header>
+
+        <!-- Project Category Filters -->
+        <div class="projects-filter-bar reveal delay-1">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ml">Data Science &amp; ML</button>
+          <button class="filter-btn" data-filter="analytics">Analytics &amp; BI</button>
+          <button class="filter-btn" data-filter="security">Security &amp; Python</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Spotlight Project 1: Zomato Sales Analytics & ML Prediction -->
+          <article class="project-card featured-spotlight reveal delay-1" data-category="ml analytics">
+            <div class="project-media-frame">
+              <span class="project-badge-overlay">
+                <span style="color: #ef4444;">★</span> Flagship Machine Learning Project
+              </span>
+              <img src="zomato-analytics-preview.svg" alt="Zomato Sales Analytics and ML Studio preview" class="project-img" />
+            </div>
+
+            <div class="project-content">
+              <div>
+                <div class="project-header-row">
+                  <h3 class="project-title">Zomato Sales Analytics, AI Prediction &amp; Recommender System</h3>
+                </div>
+
+                <p class="project-excerpt">
+                  An enterprise-grade data science platform evaluating <strong>150,000+ orders</strong>, <strong>148,000+ restaurants</strong>, and <strong>370,000+ dishes</strong> across 820+ Indian cities. Features an end-to-end machine learning pipeline comparing <strong>HistGradientBoosting ($R^2 = 0.7865$)</strong> with Random Forest and Ridge Regression for dynamic order basket valuation.
+                </p>
+
+                <ul class="project-feature-list">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>High Accuracy:</strong> $R^2 = 0.7865$ with normalized log-transformed targets on holdout test set.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Dual-Tier Recommender:</strong> B2B pricing strategy advisor (3 tiers) + B2C dining matcher.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Sub-50ms Response:</strong> Precomputed analytics cache for lightning-fast executive dashboards.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Python 3.13</span>
+                  <span class="tech-pill">Flask 3.1</span>
+                  <span class="tech-pill">Scikit-Learn 1.8</span>
+                  <span class="tech-pill">Pandas &amp; NumPy</span>
+                  <span class="tech-pill">Chart.js</span>
+                  <span class="tech-pill">Permutation Importance</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/kp09032006-code/zomato-data-analysis" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>View Repository</span>
+                </a>
+                <a href="#playground" class="btn btn-sm btn-outline">
+                  <span>Test in Query Studio</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: AgroVision Smart Crop Health Monitoring -->
+          <article class="project-card reveal delay-2" data-category="ml analytics">
+            <div class="project-media-frame">
+              <span class="project-badge-overlay">
+                <span style="color: var(--accent-emerald-light);">●</span> Agricultural AI
+              </span>
+              <img src="agrovision-project-preview.png" alt="Agrovision Crop Health Monitoring Dashboard preview" class="project-img" />
+            </div>
+
+            <div class="project-content">
+              <div>
+                <div class="project-header-row">
+                  <h3 class="project-title">AgroVision: Smart Crop Health Monitoring System</h3>
+                </div>
+
+                <p class="project-excerpt">
+                  An intelligent agricultural telemetry platform built to analyze soil, weather, and crop health metrics. Delivers actionable irrigation and disease risk warnings to farmers through an integrated visualization dashboard.
+                </p>
+
+                <ul class="project-feature-list">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Disease Detection:</strong> Algorithmic scoring based on temperature, soil moisture, and pH.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Database Integration:</strong> Structured historical sensor logs with relational backend.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Database Integration</span>
+                  <span class="tech-pill">Data Modeling</span>
+                  <span class="tech-pill">Telemetry UI</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-secondary">
+                  <span>Request Code Walkthrough</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Double Layer Steganography -->
+          <article class="project-card reveal delay-3" data-category="security">
+            <div class="project-media-frame">
+              <span class="project-badge-overlay">
+                <span style="color: var(--accent-indigo);">●</span> Information Security
+              </span>
+              <img src="steganography-project-preview.png" alt="Double Layer Steganography Architecture preview" class="project-img" />
+            </div>
+
+            <div class="project-content">
+              <div>
+                <div class="project-header-row">
+                  <h3 class="project-title">Double Layer Steganography &amp; Data Privacy</h3>
+                </div>
+
+                <p class="project-excerpt">
+                  A high-privacy security system using double-layer steganography to conceal confidential payload data inside digital carrier media. Combines dual-stage encryption logic while preventing noticeable media distortion.
+                </p>
+
+                <ul class="project-feature-list">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Dual-Tier Security:</strong> Encrypts payload before embedding into carrier file structure.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Integrity Check:</strong> Hash verification ensuring zero data loss during extraction.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Information Security</span>
+                  <span class="tech-pill">Cryptography</span>
+                  <span class="tech-pill">Bit Manipulation</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-secondary">
+                  <span>Learn More</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Enterprise CRM & Lead Pipeline Analytics -->
+          <article class="project-card reveal delay-4" data-category="analytics">
+            <div class="project-media-frame">
+              <span class="project-badge-overlay">
+                <span style="color: var(--accent-cyan);">●</span> Corporate BI Delivery
+              </span>
+              <img src="keryar-crm-preview.svg" alt="Enterprise CRM and Lead Pipeline Analytics preview" class="project-img" />
+            </div>
+
+            <div class="project-content">
+              <div>
+                <div class="project-header-row">
+                  <h3 class="project-title">Keryar CRM Lead Funnel &amp; Pipeline Analytics</h3>
+                </div>
+
+                <p class="project-excerpt">
+                  Production analytics dashboard built during my internship at Keryar IT Solution. Synthesized incoming lead telemetry from Web APIs and social advertising to monitor stage progression, conversion bottlenecks, and deal cycle time.
+                </p>
+
+                <ul class="project-feature-list">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Pipeline Optimization:</strong> Pinpointed 22% drop-off in commercial scoping stage.</span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span><strong>Automated Alerts:</strong> Python script alerting account managers on aging high-ticket leads.</span>
+                  </li>
+                </ul>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Power BI</span>
+                  <span class="tech-pill">DAX Measures</span>
+                  <span class="tech-pill">Microsoft Excel</span>
+                  <span class="tech-pill">SQL Relational Model</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="#experience" class="btn btn-sm btn-secondary">
+                  <span>View Internship Details</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. WORK EXPERIENCE SECTION ==================== -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-kicker">05 // Work Experience</span>
+          <h2 class="section-title" id="experience-title">
+            Industry <span class="text-gradient">Experience</span>
+          </h2>
+          <p class="section-lead">
+            Hands-on corporate experience in data collection, SQL transformation, Power BI modeling, and workflow automation.
+          </p>
+        </header>
+
+        <div class="experience-card reveal delay-1">
+          <div class="exp-header-row">
             <div>
-              <strong>8.11</strong>
-              <span>CGPA</span>
+              <h3 class="exp-role-title">Data Analyst Intern</h3>
+              <div class="exp-company-meta">
+                <span>KERYAR IT Solution</span>
+                <span>•</span>
+                <span>Anand, Gujarat, India</span>
+              </div>
             </div>
+            <span class="exp-date-pill">May 11, 2026 – June 11, 2026</span>
+          </div>
+
+          <div class="exp-deliverables-grid">
+            <div class="exp-deliverable-item">
+              <div class="deliverable-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p class="deliverable-text">
+                <strong>Data Ingestion &amp; Cleansing:</strong> Collected, cleaned, and organized diverse datasets across multiple departments, establishing reliable data consistency and eliminating duplicates.
+              </p>
+            </div>
+
+            <div class="exp-deliverable-item">
+              <div class="deliverable-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p class="deliverable-text">
+                <strong>SQL &amp; Trend Modeling:</strong> Formulated structured SQL queries and Excel pivot models to uncover seasonal conversion patterns and customer engagement trends.
+              </p>
+            </div>
+
+            <div class="exp-deliverable-item">
+              <div class="deliverable-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p class="deliverable-text">
+                <strong>Interactive Power BI Dashboards:</strong> Designed high-impact executive dashboards tracking core business performance metrics, sales stage velocity, and closed deals.
+              </p>
+            </div>
+
+            <div class="exp-deliverable-item">
+              <div class="deliverable-check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <p class="deliverable-text">
+                <strong>Python Automation:</strong> Automated recurring data preparation and weekly reporting tasks with Python, eliminating 4.5 hours of manual overhead per cycle.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-verification-footer">
+            <div class="exp-id-tag">
+              Certificate Credential ID: <code>08b2c359-fefb-4604-8b36-516ae158b85d</code>
+            </div>
+            <a href="Certificate_Patel Krisha_Anupkumar.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>View Letter of Certification</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. EDUCATION SECTION ==================== -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-kicker">06 // Academic Background</span>
+          <h2 class="section-title" id="education-title">
+            Education &amp; <span class="text-gradient">Foundation</span>
+          </h2>
+          <p class="section-lead">
+            Formal engineering education combining computer science fundamentals with analytical specialization.
+          </p>
+        </header>
+
+        <div class="education-timeline reveal delay-1">
+          <!-- College -->
+          <div class="edu-card">
+            <div class="edu-icon-bubble">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-degree">Bachelor of Technology (B.Tech) — Information Technology</h3>
+              <p class="edu-institution">Madhuben &amp; Bhanubhai Patel Institute of Technology (MBIT)</p>
+              <p class="edu-details">Charutar Vidya Mandal (CVM) University, New Vidhyanagar, Anand, Gujarat • 2023 – 2027</p>
+            </div>
+            <div class="edu-score-badge">
+              <div class="edu-score-num">8.11</div>
+              <div class="edu-score-label">Current CGPA</div>
+            </div>
+          </div>
+
+          <!-- Higher Secondary -->
+          <div class="edu-card">
+            <div class="edu-icon-bubble">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-degree">Higher Secondary Education (Class XII - Science Stream)</h3>
+              <p class="edu-institution">Kasturba Kanya Vidhyalay</p>
+              <p class="edu-details">Anand, Gujarat • 2021 – 2023 • Focus in Mathematics, Physics &amp; Chemistry</p>
+            </div>
+            <div class="edu-score-badge">
+              <div class="edu-score-num">52.38%</div>
+              <div class="edu-score-label">HSC Board</div>
+            </div>
+          </div>
+
+          <!-- Secondary -->
+          <div class="edu-card">
+            <div class="edu-icon-bubble">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-degree">Secondary School Education (Class X)</h3>
+              <p class="edu-institution">Kasturba Kanya Vidhyalay</p>
+              <p class="edu-details">Anand, Gujarat • Completed foundational schooling with distinction</p>
+            </div>
+            <div class="edu-score-badge">
+              <div class="edu-score-num">73.0%</div>
+              <div class="edu-score-label">SSC Board</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. CERTIFICATIONS SECTION ==================== -->
+    <section class="section" id="certifications" aria-labelledby="certs-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-kicker">07 // Verified Credentials</span>
+          <h2 class="section-title" id="certs-title">
+            Certifications &amp; <span class="text-gradient">Continuous Learning</span>
+          </h2>
+          <p class="section-lead">
+            Industry credentials verifying domain expertise across SQL, Microsoft Excel, Data Visualization, and Artificial Intelligence.
+          </p>
+        </header>
+
+        <div class="certs-grid reveal delay-1">
+          <!-- Cert 1: Great Learning SQL -->
+          <div class="cert-card">
             <div>
-              <strong>IT</strong>
-              <span>Course</span>
+              <div class="cert-top-bar">
+                <span class="cert-issuer-badge">
+                  <span class="cert-org-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                  </span>
+                  Great Learning
+                </span>
+                <span class="cert-status-tag">Verified</span>
+              </div>
+              <h3 class="cert-title">SQL for Data Science</h3>
+              <p class="cert-skills-covered">
+                Comprehensive practical training covering relational queries, aggregations, filtering, group-by logic, and data structuring.
+              </p>
             </div>
+            <div class="cert-meta-row">
+              <span>Completed: April 08, 2026</span>
+              <a href="https://www.mygreatlearning.com/certificate/UBJBUFFH" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+                <span>Verify ID: UBJBUFFH</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Cert 2: Coursera Excel Data Analysis -->
+          <div class="cert-card">
             <div>
-              <strong>Gujarat</strong>
-              <span>Location</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-card reveal delay-1">
-          <div class="profile-ring">
-            <div class="profile-photo">
-              <img src="profile.jpg" alt="Krisha Patel profile photo" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-placeholder').style.display='grid';">
-              <div class="photo-placeholder">KP</div>
-            </div>
-          </div>
-
-          <div class="status-card float-card">
-            <span class="status-dot"></span>
-            <p>Data Analytics + IT Learner</p>
-          </div>
-
-          <div class="hero-info-panel">
-            <p class="panel-label">Current Focus</p>
-            <h3>Data Analytics & IT Projects</h3>
-            <p>SQL, Excel, Power BI, Python basics, database fundamentals and academic project implementation.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span>01</span>
-          <h2>Profile Summary</h2>
-        </div>
-
-        <div class="about-layout">
-          <div class="about-card reveal">
-            <p>
-              I am a 6th-semester B.Tech Information Technology student with a solid foundation in IT and a strong focus on Data Analytics. I have hands-on academic experience in Python, database integration, data processing, and problem solving.
-            </p>
-            <p>
-              I focus on building logic, analyzing data, creating clean project workflows, and developing practical solutions that can contribute to real-world impactful projects.
-            </p>
-          </div>
-
-          <div class="quick-details reveal delay-1">
-            <div class="detail-item">
-              <span>Name</span>
-              <strong>Krisha Patel</strong>
-            </div>
-            <div class="detail-item">
-              <span>College</span>
-              <strong>Madhuben & Bhanubhai Institute of Technology</strong>
-            </div>
-            <div class="detail-item">
-              <span>Course</span>
-              <strong>Information Technology</strong>
-            </div>
-            <div class="detail-item">
-              <span>Location</span>
-              <strong>Gujarat, India</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt-section" id="education">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span>02</span>
-          <h2>Education & Certification</h2>
-        </div>
-
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <p class="timeline-date">Bachelor Program</p>
-              <h3>Information Technology</h3>
-              <p><strong>MBIT</strong> — Currently Pursuing</p>
-              <p>Current CGPA: <strong>8.11</strong></p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal delay-1">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Higher Secondary</h3>
-              <p>Completed higher secondary education with <strong>52.38%</strong>.<br>From Kasturba Kanya Vidhyalay Anand <br>Gujarat</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal delay-2">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Secondary</h3>
-              <p>Completed secondary school education with <strong>73%</strong>.<br>From From Kasturba Kanya Vidhyalay Anand <br>Gujarat</p>
-            </div>
-          </div>
-
-          <div class="timeline-item reveal delay-3">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <p class="timeline-date">Certification</p>
-              <h3>data anaylictics using microsoftexcel & SQL for data science</h3>
-              <p>Completed <strong>Complete Web Development Course</strong> and <strong>IBM SkillsBuild AI Tutorial</strong>, gaining exposure to modern web technologies and AI/ML fundamentals.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span>03</span>
-          <h2>Technical Skills</h2>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <div class="skill-icon">SQL</div>
-            <h3>SQL</h3>
-            <p>Database querying, data extraction, filtering, and basic analysis using structured data.</p>
-            <div class="progress"><span style="width: 86%"></span></div>
-          </div>
-
-          <div class="skill-card reveal delay-1">
-            <div class="skill-icon">XL</div>
-            <h3>Microsoft Excel</h3>
-            <p>Data organization, spreadsheet analysis, formulas, and reporting basics for analytics tasks.</p>
-            <div class="progress"><span style="width: 82%"></span></div>
-          </div>
-
-          <div class="skill-card reveal delay-2">
-            <div class="skill-icon">BI</div>
-            <h3>Power BI</h3>
-            <p>Data visualization concepts, dashboard thinking, and business insight presentation.</p>
-            <div class="progress"><span style="width: 72%"></span></div>
-          </div>
-
-          <div class="skill-card reveal delay-3">
-            <div class="skill-icon">PY</div>
-            <h3>Python</h3>
-            <p>Basic programming, data processing logic, database integration, and academic project development.</p>
-            <div class="progress"><span style="width: 76%"></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt-section" id="project">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span>04</span>
-          <h2>Featured Project</h2>
-        </div>
-
-        <div class="projects-stack">
-          <div class="project-showcase reveal">
-            <div class="project-badge">Major Project</div>
-            <h3>Agrovision: Smart Crop Health Monitoring System</h3>
-            <p>
-              A smart crop health monitoring system built to analyze agricultural data and provide actionable crop health insights to farmers. The project processes health metrics, supports early disease detection, and presents data through a smooth user interface.
-            </p>
-
-            <div class="project-preview-frame" aria-label="Agrovision Smart Crop Health Monitoring project preview">
-              <img src="agrovision-project-preview.png" alt="Agrovision Smart Crop Health Monitoring project interface preview" class="project-preview-img" />
-            </div>
-
-            <div class="project-features">
-              <div>
-                <span>01</span>
-                <p>Agricultural data analysis</p>
+              <div class="cert-top-bar">
+                <span class="cert-issuer-badge">
+                  <span class="cert-org-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="3" y1="9" x2="21" y2="9"></line>
+                      <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                  </span>
+                  Coursera / Freedom Learning Group
+                </span>
+                <span class="cert-status-tag">Verified</span>
               </div>
-              <div>
-                <span>02</span>
-                <p>Crop health metric processing</p>
-              </div>
-              <div>
-                <span>03</span>
-                <p>Early disease detection logic</p>
-              </div>
-              <div>
-                <span>04</span>
-                <p>Smooth data visualization UI</p>
-              </div>
+              <h3 class="cert-title">Introduction to Data Analysis using Microsoft Excel</h3>
+              <p class="cert-skills-covered">
+                Hands-on project authorized by Coursera focusing on spreadsheet analytics, data cleaning, functions, and structured reporting.
+              </p>
             </div>
-
-            <div class="tech-pills">
-              <span>Python</span>
-              <span>Frontend UI</span>
-              <span>Database Integration</span>
-              <span>Data Visualization</span>
+            <div class="cert-meta-row">
+              <span>Completed: April 06, 2026</span>
+              <a href="https://coursera.org/verify/RDAZEQLIWXZH" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+                <span>Verify ID: RDAZEQLIWXZH</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
             </div>
           </div>
 
-          <div class="project-showcase reveal delay-1">
-            <div class="project-badge security-badge">Security Project</div>
-            <h3>Double Layer Steganography</h3>
-            <p>
-              A privacy-focused Python project that implements a secure data hiding method using double-layer steganography. It embeds secret messages within media files while preserving the original file structure and hidden information integrity.
-            </p>
-
-            <div class="project-preview-frame" aria-label="Double Layer Steganography project preview">
-              <img src="steganography-project-preview.png" alt="Double Layer Steganography project interface preview" class="project-preview-img" />
+          <!-- Cert 3: Simplilearn Data Visualization -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-top-bar">
+                <span class="cert-issuer-badge">
+                  <span class="cert-org-icon" style="background: rgba(99, 102, 241, 0.15); color: var(--accent-indigo);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                      <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                    </svg>
+                  </span>
+                  Simplilearn SkillUp
+                </span>
+                <span class="cert-status-tag">Verified</span>
+              </div>
+              <h3 class="cert-title">Introduction to Data Visualization</h3>
+              <p class="cert-skills-covered">
+                Principles of visual analytics, choosing effective chart formats, highlighting key metrics, and storytelling with data.
+              </p>
             </div>
-
-            <div class="project-features">
-              <div>
-                <span>01</span>
-                <p>Double-layer data hiding</p>
-              </div>
-              <div>
-                <span>02</span>
-                <p>Secret message embedding</p>
-              </div>
-              <div>
-                <span>03</span>
-                <p>Media file integrity focus</p>
-              </div>
-              <div>
-                <span>04</span>
-                <p>Privacy and security logic</p>
-              </div>
+            <div class="cert-meta-row">
+              <span>Completed: Oct 29, 2026</span>
+              <span style="color: var(--accent-indigo); font-weight: 600;">Code: 10964486</span>
             </div>
+          </div>
 
-            <div class="tech-pills">
-              <span>INS</span>
-              <span>Security</span>
-              <span>Steganography</span>
-              <span>Python</span>
-              <span>Data Privacy</span>
-              <span>Algorithms</span>
+          <!-- Cert 4: Keryar Corporate Internship -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-top-bar">
+                <span class="cert-issuer-badge">
+                  <span class="cert-org-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </span>
+                  KERYAR IT Solution
+                </span>
+                <span class="cert-status-tag">Corporate</span>
+              </div>
+              <h3 class="cert-title">Data Analytics Professional Internship</h3>
+              <p class="cert-skills-covered">
+                Live project experience in data analytics, business dashboard development, automated reporting, and problem solving.
+              </p>
+            </div>
+            <div class="cert-meta-row">
+              <span>Completed: June 11, 2026</span>
+              <span style="color: var(--accent-emerald-light); font-weight: 600;">ID: 08b2c359-fefb</span>
+            </div>
+          </div>
+
+          <!-- Cert 5: IBM SkillsBuild AI Tutorial -->
+          <div class="cert-card">
+            <div>
+              <div class="cert-top-bar">
+                <span class="cert-issuer-badge">
+                  <span class="cert-org-icon" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-amber);">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </span>
+                  IBM SkillsBuild &amp; Simplilearn
+                </span>
+                <span class="cert-status-tag">Verified</span>
+              </div>
+              <h3 class="cert-title">Artificial Intelligence Tutorial for Beginners</h3>
+              <p class="cert-skills-covered">
+                Foundation in AI algorithms, supervised/unsupervised learning concepts, neural networks, and modern AI application frameworks.
+              </p>
+            </div>
+            <div class="cert-meta-row">
+              <span>Completed: April 17, 2026</span>
+              <span style="color: var(--accent-amber); font-weight: 600;">ID: URL-FWOZMMIUQHG</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <!-- ==================== 9. GITHUB ACTIVITY SECTION ==================== -->
+    <section class="section" id="github" aria-labelledby="github-title">
       <div class="container">
-        <div class="section-heading reveal">
-          <span>05</span>
-          <h2>Contact</h2>
-        </div>
+        <header class="section-header reveal">
+          <span class="section-kicker">08 // Open Source &amp; Code</span>
+          <h2 class="section-title" id="github-title">
+            GitHub <span class="text-gradient">Activity &amp; Repositories</span>
+          </h2>
+          <p class="section-lead">
+            Transparent, open-source work tracking algorithmic scripts, data pipelines, and production codebases.
+          </p>
+        </header>
 
-        <div class="contact-grid">
-          <div class="contact-copy reveal">
-            <h3>Let’s connect professionally.</h3>
-            <p>
-              I am open to Data Analytics / IT internship opportunities where I can apply SQL, Excel, Power BI, Python basics, and problem-solving skills to real-world projects.
-            </p>
+        <div class="github-overview-card reveal delay-1">
+          <div class="github-profile-header">
+            <div class="gh-user-identity">
+              <div class="gh-avatar-circle">
+                <img src="https://avatars.githubusercontent.com/u/282963805?v=4" alt="GitHub avatar of Krisha Patel" />
+              </div>
+              <div>
+                <h3 class="gh-handle-title">Krisha Patel</h3>
+                <p class="gh-handle-subtitle">@kp09032006-code</p>
+              </div>
+            </div>
 
-            <div class="contact-links">
-              <a href="mailto:kp09032006@gmail.com">kp09032006@gmail.com</a>
-           
-              <a href="https://github.com/kp09032006-code" target="_blank">GitHub</a>
-              <a href="https://www.linkedin.com/in/krisha-patel-1209a4305" target="_blank">LinkedIn</a>
+            <div class="gh-quick-stats">
+              <div class="gh-stat-box">
+                <span class="gh-stat-num">2</span>
+                <span class="gh-stat-lbl">Public Repositories</span>
+              </div>
+              <div class="gh-stat-box">
+                <span class="gh-stat-num">Python</span>
+                <span class="gh-stat-lbl">Primary Tech</span>
+              </div>
+              <div class="gh-stat-box">
+                <span class="gh-stat-num">SQL</span>
+                <span class="gh-stat-lbl">Data Engine</span>
+              </div>
+            </div>
+
+            <a href="https://github.com/kp09032006-code" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+              <span>Follow on GitHub</span>
+            </a>
+          </div>
+
+          <!-- Contribution Heatmap Visualizer -->
+          <div class="gh-heatmap-wrap">
+            <div class="gh-heatmap-header">
+              <span>Active Building &amp; Analysis Timeline</span>
+              <span>Consistent Data Engineering Cadence</span>
+            </div>
+            <div class="heatmap-grid" aria-hidden="true">
+              <!-- 26 columns of 7 days -->
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-2"></span>
+              <span class="heat-cell heat-lvl-1"></span>
+              <span class="heat-cell heat-lvl-3"></span>
+              <span class="heat-cell heat-lvl-4"></span>
+              <span class="heat-cell heat-lvl-2"></span>
             </div>
           </div>
 
-          <form class="contact-form reveal delay-1" id="contactForm" action="https://formsubmit.co/kp09032006@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New message from Krisha Patel Portfolio">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_autoresponse" value="Thank you for contacting Krisha Patel. Your message has been received.">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <p id="formStatus">Your message will be sent directly to kp09032006@gmail.com.</p>
-          </form>
+          <!-- Featured Repos Row -->
+          <div class="gh-repos-row">
+            <div class="repo-card">
+              <div>
+                <div class="repo-title-row">
+                  <svg class="repo-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                  <a href="https://github.com/kp09032006-code/zomato-data-analysis" target="_blank" rel="noopener noreferrer" class="repo-title-text">
+                    zomato-data-analysis
+                  </a>
+                </div>
+                <p class="repo-desc">
+                  Zomato sales business intelligence, AI predictive ML modeling (HistGradientBoosting R²=0.7865), and B2B/B2C dual recommendation engine.
+                </p>
+              </div>
+              <div class="repo-footer-meta">
+                <span style="display: flex; align-items: center; gap: 6px;">
+                  <span class="repo-lang-bullet"></span> Python
+                </span>
+                <span>Public Repository</span>
+                <span>Updated 2026</span>
+              </div>
+            </div>
+
+            <div class="repo-card">
+              <div>
+                <div class="repo-title-row">
+                  <svg class="repo-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                  </svg>
+                  <a href="https://github.com/kp09032006-code/Portfolio" target="_blank" rel="noopener noreferrer" class="repo-title-text">
+                    Portfolio
+                  </a>
+                </div>
+                <p class="repo-desc">
+                  Modern, responsive portfolio website showcasing technical skills, academic projects, corporate internship credentials, and resume.
+                </p>
+              </div>
+              <div class="repo-footer-meta">
+                <span style="display: flex; align-items: center; gap: 6px;">
+                  <span class="repo-lang-bullet" style="background: #e34c26;"></span> HTML5 / CSS3 / JS
+                </span>
+                <span>Public Repository</span>
+                <span>Live on Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. CONTACT & RESUME SECTION ==================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-kicker">09 // Let's Connect</span>
+          <h2 class="section-title" id="contact-title">
+            Start a <span class="text-gradient">Conversation</span>
+          </h2>
+          <p class="section-lead">
+            Available for Data Analyst internships, full-time associate roles, and data engineering projects.
+          </p>
+        </header>
+
+        <div class="contact-layout">
+          <!-- Left Column: Channels & Direct Resume Download -->
+          <div class="contact-info-col reveal delay-1">
+            <div class="contact-banner-card">
+              <h3 class="contact-banner-title">Let’s collaborate on meaningful data projects.</h3>
+              <p class="contact-banner-text">
+                Whether you have an upcoming analytics internship opportunity, need help turning enterprise data into interactive Power BI dashboards, or want to discuss machine learning architectures, I’d love to connect.
+              </p>
+
+              <div class="contact-channels-list">
+                <!-- Email -->
+                <div class="channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </div>
+                    <div class="channel-text-wrap">
+                      <span class="channel-label">Email Address</span>
+                      <a href="mailto:kp09032006@gmail.com" class="channel-value">kp09032006@gmail.com</a>
+                    </div>
+                  </div>
+                  <button class="copy-btn-action" data-copy="kp09032006@gmail.com">Copy</button>
+                </div>
+
+                <!-- Phone -->
+                <div class="channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                    </div>
+                    <div class="channel-text-wrap">
+                      <span class="channel-label">Phone &amp; WhatsApp</span>
+                      <a href="tel:+916359521767" class="channel-value">+91 6359521767</a>
+                    </div>
+                  </div>
+                  <button class="copy-btn-action" data-copy="+916359521767">Copy</button>
+                </div>
+
+                <!-- Location -->
+                <div class="channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                    </div>
+                    <div class="channel-text-wrap">
+                      <span class="channel-label">Location Base</span>
+                      <span class="channel-value">Anand / Gujarat, India</span>
+                    </div>
+                  </div>
+                  <span style="font-size: 0.75rem; color: var(--accent-emerald-light); font-weight: 600;">Open to Relocate / Remote</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume Download Action Card -->
+            <div class="resume-download-card">
+              <div class="resume-card-left">
+                <div class="resume-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="resume-card-title">Curriculum Vitae (Resume)</h4>
+                  <p class="resume-card-sub">Updated for 2026 • Verified PDF Document</p>
+                </div>
+              </div>
+              <a href="Krisha_Patel_Resume.pdf" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer" download="Krisha_Patel_Resume.pdf">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Working Contact Form -->
+          <div class="contact-form-card reveal delay-2">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-sub">Messages are sent directly to Krisha’s inbox via secure submission.</p>
+
+            <form id="portfolioContactForm" action="https://formsubmit.co/kp09032006@gmail.com" method="POST">
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_subject" value="New Recruiter Inquiry from Krisha Patel Portfolio" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_autoresponse" value="Thank you for contacting Krisha Patel. Your message has been received and she will get back to you shortly." />
+
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. sarah@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject / Purpose</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Data Analytics Internship Opportunity" />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Hello Krisha, we came across your analytics portfolio and would like to invite you for an interview..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send Message</span>
+              </button>
+
+              <div id="formStatusMsg" class="form-status-msg"></div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- button class="assistant-toggle" id="assistantToggle" aria-label="Open portfolio assistant">✦</button> -->
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-wrap">
+          <span class="footer-logo">KP<span style="color: var(--accent-emerald-light);">.</span></span>
+          <span class="footer-tagline">Krisha Patel — Data Analyst &amp; B.Tech Information Technology Student</span>
+        </div>
 
-  <!-- <div class="assistant-box" id="assistantBox">
-    <div class="assistant-header">
-      <div><
-        <strong>Krisha Portfolio Assistant</strong>
-        <span>Ask about skills, education or project</span>
+        <div class="footer-links-row">
+          <a href="#about" class="footer-link-item">About</a>
+          <a href="#skills" class="footer-link-item">Skills</a>
+          <a href="#playground" class="footer-link-item">Query Studio</a>
+          <a href="#projects" class="footer-link-item">Projects</a>
+          <a href="#experience" class="footer-link-item">Experience</a>
+          <a href="#education" class="footer-link-item">Education</a>
+          <a href="#certifications" class="footer-link-item">Certificates</a>
+          <a href="#contact" class="footer-link-item">Contact</a>
+        </div>
+
+        <div class="footer-social-row">
+          <a href="https://github.com/kp09032006-code" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/krisha-patel-1209a4305" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:kp09032006@gmail.com" class="footer-social-btn" aria-label="Send Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
       </div>
-      <button id="assistantClose" aria-label="Close assistant">×</button>
-    </div>
-    <div class="assistant-messages" id="assistantMessages">
-      <div class="bot-message">Hi! I can help you learn more about Krisha’s skills, education, projects, certifications, or contact details.</div>
-    </div>
-    <div class="assistant-input">
-      <input type="text" id="assistantInput" placeholder="Type a question..." />
-      <button id="assistantSend">Send</button>
-    </div>
-  </div> -->
 
-  <footer>
-    <p>© 2026 Krisha Patel. Designed with a clean professional portfolio style.</p>
+      <div class="footer-bottom-bar">
+        <span>© 2026 Krisha Patel. Designed with modern analytics engineering aesthetic. All rights reserved.</span>
+        <a href="#hero" class="back-to-top-btn" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
